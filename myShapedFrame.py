@@ -17,7 +17,7 @@ class ShapedFrame(wx.Frame):
                 style = wx.FRAME_SHAPED | wx.SIMPLE_BORDER)  #| wx.FRAME_NO_TASKBAR)
         self.hasShape = False     
         #self.delta = wx.Point(0,0)                   
-        self.bmp = wx.Bitmap(r'D:\PythonRMSProjects\roxarAPI\wxPythonProjects\img\but.png')                #(1) Получение изображения
+        self.bmp = wx.Bitmap(r'C:\PROJECTS\PythonProjects\MywxPythonDemo\img\but.png')                #(1) Получение изображения
         self.bmp.SetMask(wx.Mask(self.bmp, wx.BLACK)) 
         self.SetClientSize((self.bmp.GetWidth(), self.bmp.GetHeight()))
         dc = wx.ClientDC(self)                             #(2) Рисование изображения
