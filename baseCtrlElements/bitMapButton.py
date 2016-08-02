@@ -10,8 +10,7 @@ class BitmapButtonFrame(wx.Frame):
         self.Bind(wx.EVT_BUTTON, self.OnClick, self.button)
         self.button.SetDefault()
         bmp = wx.Bitmap("mam.png", wx.BITMAP_TYPE_PNG)
-        self.button2 = wx.BitmapButton(panel, -1, bmp, pos=(150, 20),
-            style=0)
+        self.button2 = wx.BitmapButton(panel, -1, bmp, pos=(150, 20), style=0)
         self.Bind(wx.EVT_BUTTON, self.OnClick, self.button2)
     def OnClick(self, event):
         self.Destroy()
